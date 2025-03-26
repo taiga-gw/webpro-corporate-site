@@ -1,0 +1,60 @@
+/* メインビジュアル */
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ロゴ */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 5%;
+  z-index: 10;
+}
+
+/* 背景動画 */
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* 中央テキスト */
+.textContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.verticalText {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: #ffffff;
+  background: #343434;
+  opacity: 0.9;
+  padding: 20px 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.leftText {
+  height: 325px;
+}
+
+.rightText {
+  height: 212px;
+}
