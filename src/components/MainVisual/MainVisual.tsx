@@ -8,7 +8,7 @@ export default function MainVisual() {
     <div className={styles.container}>
       {/* ロゴ */}
       <div className={styles.logo}>
-        <Image src="/site-logo.png" width={561} height={88} alt="logo"></Image>
+        <Image src="/images/site-logo.png" width={561} height={88} alt="logo"></Image>
       </div>
       {/* 背景動画 */}
       <video className={styles.backgroundVideo} autoPlay muted loop playsInline>
@@ -16,13 +16,13 @@ export default function MainVisual() {
       </video>
       {/* 中央テキスト */}
       <div className={styles.textContainer}>
-      <div className={`${styles.verticalText} ${styles.leftText}`}>
-        きっかけを創る
+        <div className={`${styles.verticalText} ${styles.leftText}`}>
+          きっかけを創る
+        </div>
+        <div className={`${styles.verticalText} ${styles.rightText}`}>
+          未来への
+        </div>
       </div>
-      <div className={`${styles.verticalText} ${styles.rightText}`}>
-        未来への
-      </div>
-    </div>
     </div>
   )
 }
