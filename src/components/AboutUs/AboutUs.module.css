@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .bg {
@@ -16,6 +17,8 @@
 
 .textArea {
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .title {
@@ -62,7 +65,7 @@
 }
 
 .item01 {
-  left: 240px;
+  left: calc(50% - 450px);
   top: 140px;
   width: 290px;
   display: flex;
@@ -83,7 +86,7 @@
 }
 
 .item03 {
-  right: 240px;
+  right: calc(50% - 450px);
   width: 290px;
   display: flex;
   flex-direction: column;
@@ -109,4 +112,140 @@
   line-height: 200%;
   letter-spacing: 0%;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    height: 1200px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .bg {
+    background-image: url('/images/about-us-sp-bg.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .textArea {
+    text-align: center;
+  }
+  
+  .title {
+    color: #0C1437;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .subTitle {
+    color: #333;
+    text-align: center;
+    font-family: "Noto Serif JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 40px */
+    letter-spacing: -0.4px;
+  }
+  
+  .desc {
+    color: #333;
+    text-align: center;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 200%; /* 32px */
+  }
+
+  .aboutUsItems {
+    position: absolute;
+    top: 430px; /* テキストエリアの下に配置（SP用に調整） */
+    left: 0;
+    width: 100%;
+    height: 800px; /* 縦に十分なスペースを確保 */
+  }
+
+  .item01 {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .item02 {
+    position: absolute;
+    left: 50%;
+    top: 250px; /* 1つ目の下に配置 */
+    transform: translateX(-50%);
+    width: 380px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+  
+  .item03 {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    top: 500px; /* 2つ目の下に配置 */
+    transform: translateX(-50%);
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .itemTitle {
+    font-family: Noto Serif JP;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 119px;
+  }
+
+  .itemDesc {
+    font-family: Noto Sans JP;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    width: 172px;
+  }
+
+  .itemDesc br {
+    display: none;
+  }
+
+  .item01 .itemTitle, 
+  .item03 .itemTitle {
+    text-align: start;
+    margin: 0 0 10px 0;
+  }
+  .item01 .itemDesc, 
+  .item03 .itemDesc {
+    text-align: start;
+  }
+
+  .item02 .itemTitle {
+    text-align: end;
+    margin: 0 0 10px 0;
+    width: 180px;
+  }
+  .item02 .itemDesc {
+    text-align: end;
+  }
 }
