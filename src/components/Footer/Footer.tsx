@@ -6,7 +6,9 @@ export default function Footer() {
     <div className={styles.container}>
       {/* 背景画像 */}
       <div className={styles.bg}>
-        <p className={styles.text}>© WEB PROMOTION. all rights reserved.</p>
+        <div className={styles.textArea}>
+          <p className={styles.text}>© WEB PROMOTION. all rights reserved.</p>
+        </div>
       </div>
     </div>
   )
