@@ -11,9 +11,11 @@ export default function MainVisual() {
         <Image src="/images/site-logo.png" width={561} height={88} alt="logo"></Image>
       </div>
       {/* 背景動画 */}
-      <video className={styles.backgroundVideo} autoPlay muted loop playsInline>
-        <source src="/videos/-42bb-4939-8e6a-2edddd2b9f00.mov" type="video/mp4" />
-      </video>
+      <div className={styles.backgroundVideoContainer}>
+        <video className={styles.backgroundVideo} autoPlay muted loop playsInline>
+          <source src="/videos/-42bb-4939-8e6a-2edddd2b9f00.mov" type="video/mp4" />
+        </video>
+      </div>
       {/* 中央テキスト */}
       <div className={styles.textContainer}>
         <div className={`${styles.verticalText} ${styles.leftText}`}>
