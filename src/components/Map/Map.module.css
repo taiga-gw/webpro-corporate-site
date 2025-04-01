@@ -6,13 +6,32 @@
   overflow: hidden;
 }
 
-.textArea {
-}
-
 .bg {
   background-image: url('/images/map-bg.png');
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 700px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding-bottom: 50px;
+}
+
+.logo {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 22px;
+}
+
+.map {
+  padding: 180px 0 50px 0;
+}
+
+.businessLogo {
+  padding-bottom: 100px;
 }
