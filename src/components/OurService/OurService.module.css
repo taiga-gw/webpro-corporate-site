@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .bg {
@@ -34,6 +35,11 @@
   justify-content: center;
   position: relative;
   z-index: 10;
+}
+
+.spOurServiceItems,
+.spOurServiceItems02 {
+  display: none;
 }
 
 .itemImage {
@@ -115,4 +121,225 @@
   z-index: 10;
   margin-top: 700px;
   align-self: flex-start;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+  .itemTitle {
+    font-family: Noto Serif JP;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 160%;
+    letter-spacing: 0%;  
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+  }
+
+  .spOurServiceItems,
+  .spOurServiceItems02 {
+    display: none;
+  }
+  
+  .line {
+    width: 174px;
+    border: #fff solid 1px;
+    color: #ffffff;
+    opacity: 0.5;
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .itemDesc {
+    font-family: Noto Sans JP;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0%;
+    align-self: flex-start;
+    color: #fff;
+    width: 280px;
+  }
+
+  .item01 img,
+  .item02 img,
+  .item03 img {
+    width: 230px;
+    height: auto;
+  }
+
+  .item01 {
+    left: 60px;
+    top: 140px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item02 {
+    top: 70px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item03 {
+    right: 60px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .spOurServiceItems,
+  .spOurServiceItems02 {
+    display: none;
+  }
+
+  .item01 img,
+  .item02 img,
+  .item03 img {
+    width: 214px;
+    height: auto;
+  }
+
+  .item01 {
+    left: 20px;
+    top: 140px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item02 {
+    top: 70px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item03 {
+    right: 20px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .itemDesc {
+    font-family: Noto Sans JP;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0%;
+    align-self: flex-start;
+    color: #fff;
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .container {
+    width: 100vw;
+    height: 2575px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .ourServiceItems,
+  .ourServiceItems02 {
+    display: none;
+  }
+
+  .spOurServiceItems,
+  .spOurServiceItems02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    padding: 60px 0 30px 0;
+    font-family: Times New Roman;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .itemBox {
+    display: flex;
+    width: 370px;
+    gap: 30px;
+  }
+
+  .itemBox02 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 370px;
+    gap: 10px;
+  }
+
+  .item01 {
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translateX(-50%);
+    width: 370px;
+  }
+
+  .item02 {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translateX(-50%);
+    width: 370px;
+  }
+  
+  .item03 {
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translateX(-50%);
+    width: 370px;
+  }
+
+  /* spOurServiceItems02のアイテムをspOurServiceItemsの下に配置するためのtop位置調整 */
+  .spOurServiceItems02 .item01 {
+    top: 50%;
+  }
+  .spOurServiceItems02 .item02 {
+    top: 66%;
+  }
+  .spOurServiceItems02 .item03 {
+    top: 80%;
+  }
+
+  .itemTitle {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+
+  .itemDesc {
+    width: 360px;
+    margin: 0 auto;
+  }
+  
 }

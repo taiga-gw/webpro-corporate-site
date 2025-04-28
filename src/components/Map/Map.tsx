@@ -11,6 +11,7 @@ export default function Map() {
           <div className={styles.logo}>
             <Image src="/images/site-logo-map.png" width={561} height={86} alt="logo" />
             <p className={styles.address}>所在地／〒158-0083 東京都世田谷区奥沢5-42-3 tefu 2F D-11</p>
+            <p className={styles.addressSp}>〒158-0083 東京都世田谷区奥沢5-42-3 tefu 2F D-11</p>
           </div>
           {/* コンテンツ */}
           <div className={styles.map}>
@@ -18,6 +19,12 @@ export default function Map() {
           </div>
           <div className={styles.businessLogo}>
             <Image src="/images/business-logo-ps.png" width={1193} height={249} alt="logo"></Image>
+          </div>
+
+          <div className={styles.businessLogoSp}>
+            <Image src="/images/company01.png" width={260} height={150} alt="logo"></Image>
+            <Image src="/images/company02.png" width={260} height={150} alt="logo"></Image>
+            <Image src="/images/company03.png" width={260} height={150} alt="logo"></Image>
           </div>
         </div>
       </div>

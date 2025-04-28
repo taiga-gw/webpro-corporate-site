@@ -26,7 +26,7 @@ export default function AboutUs() {
       {/* 背景画像 */}
       <div className={styles.bg}>
         {/* コンテンツ */}
-        <div className={styles.textArea}>
+        <div className={styles.k}>
           <h1 className={styles.title}>About Us</h1>
           <h2 className={styles.subTitle}>
             私たちが生み出すアイデアやサービスが、

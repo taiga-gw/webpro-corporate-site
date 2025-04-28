@@ -83,3 +83,50 @@
   font-weight: 400;
   line-height: 160%; /* 40px */
 }
+
+@media screen and (max-width: 767px) {
+  .contactButtonArea {
+    width: 380px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subTitle {
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .contactButtonArea {
+    width: 320px;
+  }
+
+  .contactButtonInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 300px;
+    height: 92px;
+    flex-shrink: 0;
+    border: 1px solid #075CA5;
+  }
+
+  .contactButtonInner img {
+    width: 43px;
+  }
+  
+  .contactButton {
+    color: #09499B;
+    text-align: center;
+    font-family: "Yu Mincho";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 40px */
+  }
+}

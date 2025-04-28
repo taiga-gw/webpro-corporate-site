@@ -25,3 +25,15 @@
   font-weight: 300;
   line-height: normal;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 150px;
+  }
+
+  .text {
+    font-size: 14px;
+    padding: 0 20px;
+    text-align: center;
+  }
+}

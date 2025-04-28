@@ -83,13 +83,33 @@
   height: 212px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .logo {
     width: 315px;
     top: 20px;
     left: 4%;
   }
 
+  /* 中央テキスト */
+  .textContainer {
+    gap: 20px;
+  }
+
+  .verticalText {
+    padding: 15px 10px;
+    font-size: 40px;
+  }
+  
+  .leftText {
+    height: 310px;
+  }
+  
+  .rightText {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   /* 中央テキスト */
   .textContainer {
     gap: 20px;

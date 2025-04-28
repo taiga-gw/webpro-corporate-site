@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 
 .bg {
@@ -20,6 +21,8 @@
   justify-content: center;
   align-items: center; 
   padding-bottom: 50px;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -27,14 +30,154 @@
   padding-top: 100px;
 }
 
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
 .address {
   padding-top: 26px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.addressSp {
+  display: none;
 }
 
 .map {
   padding: 180px 0 0 0;
+  width: 100%;
+  max-width: 1714px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .businessLogo {
-  padding-bottom: 100px;
+  padding: 100px;
+  width: 100%;
+  max-width: 1193px;
+}
+
+.businessLogo img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.businessLogoSp {
+  display: none;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 50px;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .addressSp {
+    display: none;
+  }
+  
+  .businessLogoSp {
+    display: none;
+  }
+}
+
+/* レスポンシブ対応 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    height: auto;
+  }
+  
+  .content {
+    padding: 0 20px 30px;
+  }
+  
+  .logo {
+    padding-top: 60px;
+  }
+  
+  .map {
+    padding: 100px 0 0 0;
+  }
+  
+  .businessLogo {
+    padding-bottom: 50px;
+  }
+  
+  .address {
+    font-size: 14px;
+    padding: 20px 15px 0;
+  }
+
+  .addressSp {
+    display: none;
+  }
+
+  .businessLogoSp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: 1000px;
+  }
+
+  .bg {
+    background-image: url('/images/map-bg-sp.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+  }
+
+  .logo img {
+    width: 370px;
+    margin: 0 auto;
+  }
+
+  .address {
+    display: none;
+  }
+
+  .addressSp {
+    display: block;
+    font-size: 14px;
+    padding: 20px 15px 0;
+  }
+
+  .map {
+    padding: 20px;
+  }
+
+  .map img {
+    width: 346px;
+    height: 273px;
+    margin: 0 auto;
+  }
+
+  .businessLogo {
+    display: none;
+  }
+
+  .businessLogoSp {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
