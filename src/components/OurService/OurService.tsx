@@ -144,7 +144,7 @@ export default function OurService() {
         <div className={styles.spOurServiceItems02}>
           <div className={styles.item01}>
             <div className={styles.itemBox02}>
-              <Image src="/images/our-service-item01.png" 
+              <Image src="/images/our-service-item04.png" 
                 width={isMobile ? 155 : 271} 
                 height={isMobile ? 155 : 271} 
                 alt='about-us01'
@@ -155,7 +155,7 @@ export default function OurService() {
           </div>
           <div className={styles.item02}>
             <div className={styles.itemBox}>
-              <Image src="/images/our-service-item02.png" 
+              <Image src="/images/our-service-item05.png" 
                 width={isMobile ? 155 : 271} 
                 height={isMobile ? 155 : 271} 
                 alt='about-us02'
@@ -166,7 +166,7 @@ export default function OurService() {
           </div>
           <div className={styles.item03}>
             <div className={styles.itemBox02}>
-              <Image src="/images/our-service-item03.png" 
+              <Image src="/images/our-service-item06.png" 
                 width={isMobile ? 155 : 271} 
                 height={isMobile ? 155 : 271} 
                 alt='about-us03'
