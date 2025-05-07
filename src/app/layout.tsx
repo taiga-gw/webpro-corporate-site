@@ -57,7 +57,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -65,6 +64,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link
+          rel="stylesheet"
+          href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css"
+        />
+
+        {/* Google Tag Manager Script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-0BZC29QMS9"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MK9PG9V7');`,
+          }}
+        />
+        <style>{`
+          @media screen and (min-width: 1280px) {
+            .page-title-block {
+              margin-top: 96px;
+            }
+            .home-slider {
+              margin-top: 96px;
+            }
+          }
+        `}</style>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoSansJP.variable} ${notoSerifJP.variable} antialiased`}
       >
