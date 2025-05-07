@@ -29,9 +29,34 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export const metadata: Metadata = {
-  title: "デンタルマーケティングサービス",
-  description: "歯科医院のブランド成長を支援するデジタルマーケティングサービス",
+  title: "未来へのきっかけを創る企業｜ウェブプロモーション",
+  description:
+    "「私たちが生み出すアイデアやサービスが、デンタル分野に関わる人々にとっての新たなスタートとなる。」を理念に様々なサービスを提供してます。ＷＥＢマーケティング、ＳＥＯ、広告運用、独自ブランディングによる差別化戦略など、「クリニックの価値を最大化」をミッションに掲げてます。",
+  keywords: ["ウェブプロモーション"],
+  openGraph: {
+    title: "未来へのきっかけを創る企業｜ウェブプロモーション",
+    description:
+      "「私たちが生み出すアイデアやサービスが、デンタル分野に関わる人々にとっての新たなスタートとなる。」を理念に様々なサービスを提供してます。ＷＥＢマーケティング、ＳＥＯ、広告運用、独自ブランディングによる差別化戦略など、「クリニックの価値を最大化」をミッションに掲げてます。",
+    url: "https://www.w-pro.jp/",
+    siteName: "ウェブプロモーション",
+    type: "website",
+    images: [
+      {
+        url: "https://www.w-pro.jp/img/mv-pc.png",
+        width: 1200,
+        height: 630,
+        alt: "未来へのきっかけを創る企業｜ウェブプロモーション",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://www.w-pro.jp/",
+  },
+  other: {
+    "format-detection": "telephone=no",
+  },
 };
+
 
 export default function RootLayout({
   children,
